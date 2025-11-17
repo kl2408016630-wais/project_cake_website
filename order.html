@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Now - Heavenly Bites Bakery</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fffaf2;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #f7c59f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #6b2f0b;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #f7c59f;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #e3a46e;
+      transform: scale(1.05);
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #6b2f0b;
+      font-weight: bold;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Heavenly Bites Bakery</h1>
+  </header>
+
+  <div class="container">
+    <h2>Place Your Order</h2>
+    <form action="order_success.php" method="POST">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="012-3456789" required>
+
+      <label for="cake">Select Cake:</label>
+      <select id="cake" name="cake" required>
+        <option value="">-- Choose your cake --</option>
+        <option value="Butter Cake">Classic Butter Cake (RM8)</option>
+        <option value="Chocolate Indulgence">Chocolate Indulgence (RM10)</option>
+        <option value="Red Velvet">Red Velvet (RM9)</option>
+      </select>
+
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" min="1" placeholder="1" required>
+
+      <label for="message">Additional Message (optional):</label>
+      <textarea id="message" name="message" rows="3" placeholder="E.g. less sweet, write name on cake"></textarea>
+
+      <button type="submit">Submit Order</button>
+    </form>
+
+    <a href="index.html" class="back-link">← Back to Home</a>
+  </div>
+
+</body>
+</html>

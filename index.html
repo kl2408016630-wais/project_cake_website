@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heavenly Bites Bakery</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9baba;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #f9baba;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    nav a {
+      text-decoration: none; margin: 0 15px; color: #4b2e2b; font-weight: bold;
+    }
+
+    nav a:hover { 
+      color: #b84b4b; 
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 50px;
+      background-color: #fde6d0;
+    }
+
+    .hero img {
+      width: 40%;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .hero-text {
+      width: 55%;
+      text-align: left;
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      color: #6b2f0b;
+    }
+
+  
+
+    .hero-text p {
+      font-size: 18px;
+      color: #5c4033;
+      margin-bottom: 20px;
+    }
+
+    .order-btn {
+      background-color: #f7c59f;
+      color: white;
+      padding: 15px 25px;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .order-btn:hover {
+      background-color: #e3a46e;
+      transform: scale(1.05);
+    }
+
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .item {
+      background: white;
+      border-radius: 10px;
+      width: 220px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 15px;
+    }
+
+    .item img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: #f9baba;
+      color: white;
+      text-align: right;
+      padding: 10px 20px;
+      position: relative;
+    }
+
+    .contact-info {
+      position: absolute;
+      bottom: 10px;
+      right: 20px;
+      text-align: right;
+    }
+
+    .contact-info p {
+      margin: 3px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🍰 Heavenly Bites</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="img/sponge.jpg" width="230" height="300">
+    <div class="hero-text">
+      <h1>Freshly Baked Happiness!</h1>
+      <p>Delicious butter cakes baked with love for students and lecturers at UPTM.</p>
+      <button class="order-btn" onclick="window.location.href='order.html'">Order Now</button>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="menu">
+    <div class="item">
+      <img src="img/buttercake.jpg" width="290" height="210">
+      <h3>Classic Butter Cake</h3>
+      <p>RM8.00 per slice</p>
+    </div>
+    <div class="item">
+      <img src="img/chocoIndulgance.jpg" alt="Chocolate Cake">
+      <h3>Chocolate Indulgence</h3>
+      <p>RM10.00 per slice</p>
+    </div>
+    <div class="item">
+      <img src="img/redVelvet.jpg" alt="Red Velvet">
+      <h3>Red Velvet</h3>
+      <p>RM9.00 per slice</p>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>© 2025 Heavenly Bites Bakery</p>
+    <div class="contact-info">
+      <p><strong>Phone:</strong> 011-58975589</p>
+      <p><strong>Email:</strong> heavenlybites@gmail.com</p>
+    </div>
+  </footer>
+
+</body>
+</html>
