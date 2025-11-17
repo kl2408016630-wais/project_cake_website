@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cake Gallery - Heavenly Bites</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fffaf2;
+      margin: 0; padding: 0;
+    }
+
+    header {
+      background-color: #f7c59f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+      padding: 30px;
+    }
+
+    .card {
+      width: 260px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      color: #6b2f0b;
+      margin: 15px 0 5px;
+    }
+
+    .card p {
+      color: #5c4033;
+      font-size: 14px;
+      padding: 0 10px;
+    }
+
+    .details-btn {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #f7c59f;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .details-btn:hover {
+      background-color: #e3a46e;
+      transform: scale(1.05);
+    }
+
+    header { background-color: #f9baba; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    header h1 { margin: 0; color: #4b2e2b; }
+    nav a { text-decoration: none; margin: 0 15px; color: #4b2e2b; font-weight: bold; }
+    nav a:hover { color: #b84b4b; }
+  </style>
+</head>
+<body>
+
+<header>
+   <h1>🍰 Heavenly Bites</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="gallery.html">Gallery</a>
+    </nav>
+</header>
+
+<div class="gallery">
+
+  <div class="card">
+    <img src="img/buttercake.jpg" alt="Butter Cake">
+    <h3>Classic Butter Cake</h3>
+    <p>Soft, fluffy, and rich in buttery taste.</p>
+    <a class="details-btn" href="details_butter.html">View Details</a>
+  </div>
+
+  <div class="card">
+    <img src="img/chocoIndulgance.jpg" alt="Chocolate Cake">
+    <h3>Chocolate Indulgence</h3>
+    <p>Deep chocolate flavor with creamy layers.</p>
+    <a class="details-btn" href="details_choco.html">View Details</a>
+  </div>
+
+  <div class="card">
+    <img src="img/redvelvet.jpg" alt="Red Velvet Cake">
+    <h3>Red Velvet</h3>
+    <p>Smooth, luxurious, and topped with cream cheese.</p>
+    <a class="details-btn" href="details_red.html">View Details</a>
+  </div>
+
+</div>
+
+</body>
+</html>

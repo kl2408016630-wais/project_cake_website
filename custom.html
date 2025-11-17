@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Cake Order</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #fff7f0;
+        }
+        h1 {
+            text-align: center;
+            padding: 20px;
+            color: #c47a3f;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+        .sample-title {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #c47a3f;
+        }
+        .sample-gallery {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            padding-bottom: 20px;
+        }
+        .sample-gallery img {
+            height: 180px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .form-box {
+            background: white;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #c47a3f;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            margin-top: 5px;
+        }
+        textarea {
+            height: 120px;
+        }
+
+        button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 12px;
+            background: #c47a3f;
+            color: white;
+            border: none;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #a86232;
+        }
+
+        .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #6b2f0b;
+      font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+
+<h1>Build Your Custom Cake</h1>
+
+<div class="container">
+
+    <div class="sample-section">
+        <div class="sample-title">Sample Cake Designs</div>
+
+        <div class="sample-gallery">
+            <img src="img/sponge.jpg">
+            <img src="img/buttercake.jpg">
+            <img src="img/chocoIndulgance.jpg">
+        </div>
+    </div>
+
+    <div class="form-box">
+        <form action="order_success.php" method="POST">
+
+            <label>Your Name:</label>
+            <input type="text" name="name" required>
+
+            <label>Phone Number:</label>
+            <input type="text" name="phone" required>
+
+            <label>Select Cake Type:</label>
+            <select name="cake_type" required>
+                <option value="">Select Cake</option>
+                <option>Butter Cake</option>
+                <option>Chocolate Cake</option>
+                <option>Red Velvet Cake</option>
+            </select>
+
+            <label>Cake Size:</label>
+            <select name="size" required>
+                <option value="">Choose Size</option>
+                <option>Small (6 inch)</option>
+                <option>Medium (8 inch)</option>
+                <option>Large (10 inch)</option>
+            </select>
+
+            <label>Description (Design, Color, Theme):</label>
+            <textarea name="details" placeholder="Example: Pink theme, flower design, birthday cake 21 years old"></textarea>
+
+            <button type="submit">Submit Custom Cake Order</button>
+
+        </form>
+        <a href="index.html" class="back-link">← Back to Home</a>
+    </div>
+
+</div>
+
+</body>
+</html>
